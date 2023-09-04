@@ -1,0 +1,12 @@
+<div class="content" style="background-image: url('../Images/bg-header-sobre.jpg');">
+	<div class="px-5">
+		<a href="../Products/Product_Order.asp?sitenome=<%=request.Cookies("wlabel")("siteNome")%>">
+			<img src="../Images/logo.png" alt="" style="margin-top:10px;">
+		</a>
+	</div>
+	<div class="py-5" style="text-align:center;">
+		<img src="https://www.affinityseguro.com.br/old/img/agtaut/<%=request.Cookies("wlabel")("revId")%>.jpg" class="rounded-circle" width="150" height="150">
+		<h2 style="color:white;"><%=Request.Cookies("wlabel")("fantasia")%></h2>
+		<h4 style="color:white;"><%=Request.Cookies("wlabel")("emailAtendimento")%></h4>
+	</div>
+</div>

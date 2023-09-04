@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Next Seguro Viagens</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <!-- Início navegador -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo-parceiro.jpg" style="width: 197px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="sobre-next.html">Sobre a NEXT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="diferenciais.html">Diferenciais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim navegador -->
+
+    <!-- Início banner -->
+    <div class="imagem-capa" style="background-image: url('img/banner.png');"></div>
+    <!-- Fim banner -->
+    <div class="container">
+        <div class="card formulario-cotacao shadow">
+            <div class="card-body px-5 py-5">
+                <h2 class="titulo col-12 mb-5">
+                    Faça agora uma cotação do seu <span style="font-weight: 600; font-style: italic;">seguro
+                        viagem:</span>
+                </h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <select class="form-select campo-customizado mb-3">
+                            <option value="">Destino da viagem</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control campo-customizado mb-3" placeholder="Embarque no Brasil">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control campo-customizado mb-3"
+                            placeholder="Desembarque no Brasil">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control campo-customizado mb-3" placeholder="Passageiros">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control campo-customizado mb-3" placeholder="Nome">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control campo-customizado mb-3" placeholder="E-mail">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control campo-customizado mb-3 telefone" placeholder="Telefone com DDD">
+                    </div>
+                </div>
+                <div class="form-group col-12 radio">
+                    <label for="incluir">
+                        Incluir a <span style="font-weight: 600; font-style: italic;">cobertura complementar para
+                            Covid-19</span> no plano?
+                    </label>
+                    <input type="radio" id="incluir" name="incluir" value="1">
+                    <label for="incluir">Incluir</label>
+                    <input type="radio" id="naoIncluir" name="incluir" value="0" checked="">
+                    <label for="naoIncluir">Não Incluir</label>
+                    <br>
+                    <label>Existem restrições de coberturas para países listados pelo <a
+                            href="https://www.nextseguroviagem.com.br/nossos-planos/#OFAC"><strong>OFAC</strong></a></label>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 desconto">
+                        <p>
+                            *Desconto de até 70% <br>
+                            Até 10x s/ juros no cartão
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-end"><a href="" class="cta">REALIZAR MINHA COTAÇÃO</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <h2>Passo 1 - Seleção do Plano</h2>
+        </div>
+        <ul class="progressbar d-flex justify-content-center mb-5">
+            <li class="active">Seleção do Plano</li>
+            <li>Informar Dados</li>
+            <li>Realizar Pagamento</li>
+        </ul>
+
+        <!-- Inicio dos cards de planos -->
+        <div class="card plano mb-3">
+            <div class="card-body px-5 py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="card-title nome-plano">NEXT 15</h5>
+                        Sem franquia ou carência<br>
+                        Plano cobre lazer, estudo ou negócios<br>
+                        Opção de atendimento via WhatsApp<br><br>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-style: italic; color: #000; text-decoration: none;">Detalhes do plano</a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h5 class="preco-plano">R$ 530,26</h5>
+                                <span class="preco-por-pessoa">R$ 265,13 por pessoa</span><br>
+                                <b>ou em até 10x sem juros
+                                    de R$ 53,03</b>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="img/selo-plano.png" width="70px">
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <a href="informar-dados.html" class="cta">COMPRAR SEGURO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card plano mb-3">
+            <div class="destaque-plano">Este plano é lorem ipsum</div>
+            <div class="card-body px-5 py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="card-title nome-plano">NEXT 15 LOREM IPSUM</h5>
+                        Sem franquia ou carência<br>
+                        Plano cobre lazer, estudo ou negócios<br>
+                        Opção de atendimento via WhatsApp<br><br>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-style: italic; color: #000; text-decoration: none;">Detalhes do plano</a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h5 class="preco-plano">R$ 530,26</h5>
+                                <span class="preco-por-pessoa">R$ 265,13 por pessoa</span><br>
+                                <b>ou em até 10x sem juros
+                                    de R$ 53,03</b>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="img/selo-plano.png" width="70px">
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <a href="informar-dados.html" class="cta">COMPRAR SEGURO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card plano mb-3">
+            <div class="card-body px-5 py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="card-title nome-plano">NEXT 15</h5>
+                        Sem franquia ou carência<br>
+                        Plano cobre lazer, estudo ou negócios<br>
+                        Opção de atendimento via WhatsApp<br><br>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-style: italic; color: #000; text-decoration: none;">Detalhes do plano</a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h5 class="preco-plano">R$ 530,26</h5>
+                                <span class="preco-por-pessoa">R$ 265,13 por pessoa</span><br>
+                                <b>ou em até 10x sem juros
+                                    de R$ 53,03</b>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="img/selo-plano.png" width="70px">
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <a href="informar-dados.html" class="cta">COMPRAR SEGURO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim dos cards de planos -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <br>
+                  <div class="card plano mb-3">
+                    <div class="card-body px-5 py-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 class="card-title nome-plano">NEXT 15</h5>
+                                Sem franquia ou carência<br>
+                                Plano cobre lazer, estudo ou negócios<br>
+                                Opção de atendimento via WhatsApp<br><br>
+                                
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <h5 class="preco-plano">R$ 530,26</h5>
+                                        <span class="preco-por-pessoa">R$ 265,13 por pessoa</span><br>
+                                        <b>ou em até 10x sem juros
+                                            de R$ 53,03</b>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img src="img/selo-plano.png" width="70px">
+                                    </div>
+                                    <div class="col-md-5 text-end">
+                                        <a href="informar-dados.html" class="cta">COMPRAR SEGURO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <h2>Coberturas do Plano</h2><br>
+                <table class="table table-striped">
+                    <tr>
+                      <th>Cobertura</th>
+                      <th>Valor</th>
+                    </tr>
+                    <tr>
+                      <td>Assistência Médica</td>
+                      <td>R$ 50.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Cancelamento de Viagem</td>
+                      <td>R$ 5.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Perda de Bagagem</td>
+                      <td>R$ 2.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Traslado Médico</td>
+                      <td>R$ 10.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Despesas Odontológicas</td>
+                      <td>R$ 1.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Atraso de Voo</td>
+                      <td>R$ 500,00</td>
+                    </tr>
+                    <tr>
+                      <td>Seguro de Responsabilidade Civil</td>
+                      <td>R$ 100.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Interrupção de Viagem</td>
+                      <td>R$ 5.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Assistência Jurídica</td>
+                      <td>R$ 2.500,00</td>
+                    </tr>
+                    <tr>
+                      <td>Repatriação Sanitária</td>
+                      <td>R$ 20.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Despesas Farmacêuticas</td>
+                      <td>R$ 1.500,00</td>
+                    </tr>
+                    <tr>
+                      <td>Invalidez Permanente</td>
+                      <td>R$ 50.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Morte Acidental</td>
+                      <td>R$ 100.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Danos à Bagagem</td>
+                      <td>R$ 3.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Assistência em Caso de Roubo</td>
+                      <td>R$ 1.000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Assistência em Caso de Furto</td>
+                      <td>R$ 1.000,00</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Início Rodapé -->
+    <div class="footer mt-5">
+        <div class="container pb-3 pt-3 text-white">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Siga a NEXT nas redes sociais</p>
+                    <a href="" class="social">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="social">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="" class="social">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="" class="social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                </div>
+                <div class="col-md-6 text-end">
+                    <img src="img/logo-vetor.svg" width="150px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim Rodapé -->
+    <script>
+        $(document).ready(function () {
+          $('.celular').mask('(00) 0000-00000');
+          $('.telefone').mask('(00) 0000-00000');
+          $('.data').mask('00/00/0000');
+          $('.cep').mask('00.000-000');
+          $('.cpf').mask('000.000.000-00');
+        });
+      </script>
+</body>
+
+</html>

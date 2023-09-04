@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Next Seguro Viagens</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <!-- Início navegador -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo-parceiro.jpg" style="width: 197px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="sobre-next.html">Sobre a NEXT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="diferenciais.html">Diferenciais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim navegador -->
+
+    <!-- Início banner -->
+    <div class="imagem-capa" style="background-image: url('img/banner.png');"></div>
+    <!-- Fim banner -->
+    <div class="container">
+
+        <div class="text-center mt-5">
+            <h2>Passo 2 - Informar Dados</h2>
+        </div>
+        <ul class="progressbar d-flex justify-content-center mb-5">
+            <li class="active">Seleção do Plano</li>
+            <li class="active">Informar Dados</li>
+            <li>Realizar Pagamento</li>
+        </ul>
+        <!-- Início Passageiros -->
+        <div class="card plano mb-3">
+            <div class="card-body py-4 px-4">
+                <h5 class="card-title"><i class="fas fa-user"></i> Passageiro 1</h5><br>
+                <div class="row">
+                    <div class="col-md-3 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Nome"></div>
+                    <div class="col-md-3 mb-3"><input type="text" class="form-control campo-customizado cpf" placeholder="CPF"></div>
+                    <div class="col-md-3 mb-3"><input type="text" class="form-control campo-customizado data" placeholder="Data de Nascimento"></div>
+                    <div class="col-md-3 mb-3">
+                        <select class="form-select campo-customizado">
+                        <option value="">Sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="card plano mb-3">
+            <div class="card-body py-4 px-4">
+                <h5 class="card-title"><i class="fas fa-user"></i> Passageiro 2</h5><br>
+                <div class="row">
+                    <div class="col-md-3 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Nome"></div>
+                    <div class="col-md-3 mb-3"><input type="text" class="form-control campo-customizado cpf" placeholder="CPF"></div>
+                    <div class="col-md-3 mb-3"><input type="text" class="form-control campo-customizado data" placeholder="Data de Nascimento"></div>
+                    <div class="col-md-3 mb-3">
+                        <select class="form-select campo-customizado">
+                        <option value="">Sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="card plano mb-3">
+            <div class="card-body py-4 px-4">
+                <h5 class="card-title"><i class="fas fa-user"></i> Passageiro 3</h5><br>
+                <div class="row">
+                    <div class="col-md-3 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Nome"></div>
+                    <div class="col-md-3 mb-3"><input type="text" class="form-control campo-customizado cpf" placeholder="CPF"></div>
+                    <div class="col-md-3 mb-3"><input type="text" class="form-control campo-customizado data" placeholder="Data de Nascimento"></div>
+                    <div class="col-md-3 mb-3">
+                        <select class="form-select campo-customizado">
+                        <option value="">Sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Passageiros -->
+        <hr>
+        <!-- Início contato de emergência -->
+        <h5 class="card-title"><i class="fas fa-ambulance"></i> Contato de Emergência</h5><br>
+        <div class="row">
+            <div class="col-md-4 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Nome"></div>
+            <div class="col-md-4 mb-3"><input type="text" class="form-control campo-customizado telefone" placeholder="Telefone"></div>
+            <div class="col-md-4 mb-3"><input type="email" class="form-control campo-customizado" placeholder="E-mail"></div>
+        </div>
+        <!-- Fim contato de emergência -->
+        <hr>
+        <!-- Início dados de pagamento -->
+        <h5 class="card-title"><i class="fas fa-dollar-sign"></i> Dados do Comprador</h5><br>
+        <div class="row">
+            <div class="col-md-4 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Nome"></div>
+            <div class="col-md-4 mb-3"><input type="text" class="form-control campo-customizado telefone" placeholder="Telefone"></div>
+            <div class="col-md-4 mb-3"><input type="email" class="form-control campo-customizado" placeholder="E-mail"></div>
+            <div class="col-md-4 mb-3"><input type="text" class="form-control campo-customizado cep" placeholder="CEP"></div>
+            <div class="col-md-4 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Endereço"></div>
+            <div class="col-md-2 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Número"></div>
+            <div class="col-md-2 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Complemento"></div>
+            <div class="col-md-4 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Bairro"></div>
+            <div class="col-md-4 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Cidade"></div>
+            <div class="col-md-4 mb-3"><input type="text" class="form-control campo-customizado" placeholder="Estado"></div>
+        </div>
+        <!-- Fim dados de pagamento -->
+        <div class="row mt-3">
+            <div class="col-md-6 mb-3">
+                <div class="card plano shadow">
+                    <div class="card-body py-4 px-4">
+                        <h5 class="card-title"><i class="fas fa-list"></i> Resumo da Compra</h5><br>
+                        <ul>
+                            <li>Plano 1 - Cobertura Completa</li>
+                            <li>Origem: Brasil</li>
+                            <li>Destino: América Central</li>
+                            <li>Início da Vigência: 10 de junho de 2023</li>
+                            <li>Fim da Vigência: 20 de junho de 2023</li>
+                            <li>Passageiros com até 64 anos: 2</li>
+                            <li>Passageiros com mais de 65 anos: 1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card plano shadow">
+                    <div class="card-body py-4 px-4">
+                        <h5 class="card-title"><i class="fas fa-shopping-cart"></i> Valor Final</h5><br>
+                        <h5 class="preco-plano">R$ 530,26</h5>
+                        <span class="preco-por-pessoa">R$ 265,13 por pessoa</span><br>
+                        <b>ou em até 10x sem juros
+                        de R$ 53,03</b>
+                        <div class="text-end mb-4 mt-5"><a href="efetuar-pagamento.html" class="cta">EFETUAR PAGAMENTO</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Início Rodapé -->
+    <div class="footer mt-5">
+        <div class="container pb-3 pt-3 text-white">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Siga a NEXT nas redes sociais</p>
+                    <a href="" class="social">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="social">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="" class="social">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="" class="social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                </div>
+                <div class="col-md-6 text-end">
+                    <img src="img/logo-vetor.svg" width="150px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim Rodapé -->
+    <script>
+        $(document).ready(function () {
+          $('.celular').mask('(00) 0000-00000');
+          $('.telefone').mask('(00) 0000-00000');
+          $('.data').mask('00/00/0000');
+          $('.cep').mask('00.000-000');
+          $('.cpf').mask('000.000.000-00');
+        });
+      </script>
+</body>
+
+</html>
