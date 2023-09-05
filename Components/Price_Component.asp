@@ -525,10 +525,10 @@
             </div>
    
             <div class="col-md-4">
-                <input type="text" class="form-control campo-customizado mb-3" name="nomeCli" placeholder="Nome">
+                <input type="text" class="form-control campo-customizado mb-3" name="nomeCli" placeholder="Nome" onblur="verificaNome($(this))">
             </div>
             <div class="col-md-4">
-                <input type="text" class="form-control campo-customizado mb-3" name="email" placeholder="E-mail">
+                <input type="text" class="form-control campo-customizado mb-3" name="email" placeholder="E-mail" onblur="verificaEmail($(this))">
             </div>
 
             <div class="col-md-4">
@@ -560,7 +560,7 @@
 				<%end if%>
                 <br>
                 <label>Existem restrições de coberturas para países listados pelo <a
-                    href="https://seguroviagemnext.com.br/Products/sobre-next.asp#OFAC"><strong>OFAC</strong></a></label>
+                    href="https://seguroviagemnext.com.br/v2/Products/sobre-next.asp#OFAC"><strong>OFAC</strong></a></label>
 
                 
                 <div class="form-group col-md-3">
@@ -611,6 +611,35 @@
                     return false;
                 }
              
+            }
+            function verificaEmail(emailInput) {
+                var email = emailInput.val().trim();
+                var emailLen = email.length;
+
+                //var mailformat = /^([A-Za-z0-9\.])+\@([A-Za-z0-9])+\.([A-Za-z]{2,4})$/;
+                var mailformat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                atpos = email.indexOf("@");
+                dotpos = email.lastIndexOf(".");
+                if (mailformat.test(email) && emailLen < 50){
+                    return true;
+                } 
+                else{
+                    alert("Email Inválido");
+                    emailInput.val("");
+                    return false;
+                }  
+            }
+            function verificaNome(nameInput){
+                var nome = nameInput.val().trim();
+                var nomeLen = nome.length;
+                var reg = /[a-zA-Z\u00C0-\u00FF ]+/i;
+                if(reg.test(nome) && nomeLen < 25){
+                    return true;
+                } else {
+                    alert("Nome Inválido");
+                    nameInput.val("");
+                    return false;
+                }
             }
         </script>
     </div>
