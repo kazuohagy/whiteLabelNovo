@@ -3,7 +3,7 @@
 
 <%    
     modal = false
-    address = "../../Products/Plan_Comparative.asp?"
+    address = "../../v2/Products/Plan_Comparative.asp?"
 
     siteNome = request.QueryString("siteNome")
 	
@@ -45,6 +45,18 @@
 <head>
   <title><%=COMPANY_NAME%></title>
 <!--#include file="../Components/HTML_Head.asp" -->
+<style>
+    .custom-card-height {
+        height: 280px;
+    }
+     .vertical-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+</style>
 </head>
 
 <body>
@@ -62,47 +74,83 @@
 
     <div class="row diff-cards slider mb-5">
       <div class="col-md-3 mx-2">
-        <div class="card vantagem">
-          <div class="card-body text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra
-            nisl eget tortor vestibulum semper. Maecenas dictum turpis purus, id finibus purus imperdiet sed. Morbi at
-            augue vitae risus mattis lacinia.</div>
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center vertical-center"><h5>Assistência Médica e Hospitalar</h5>Os planos NEXT asseguram atendimento
+           médico, hospitalar ou odontológico em caso de acidente ou enfermidade contraída durante a viagem, manifestados
+            sob a forma de dor ou doença, incluindo opções que podem cobrir Covid-19.
+          </div>
         </div>
       </div>
       <div class="col-md-3 mx-2">
-        <div class="card vantagem">
-          <div class="card-body text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra
-            nisl eget tortor vestibulum semper. Maecenas dictum turpis purus, id finibus purus imperdiet sed. Morbi at
-            augue vitae risus mattis lacinia.</div>
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center vertical-center"><h5>Telemedicina</h5>Opção Telemedicina para os viajantes que preferem uma consulta
+           remota com um profissional médico para tratar de temas menores ou mesmo para conseguir uma intervenção primária veloz em quadros sensíveis e graves.
+          </div>
         </div>
       </div>
       <div class="col-md-3 mx-2">
-        <div class="card vantagem">
-          <div class="card-body text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra
-            nisl eget tortor vestibulum semper. Maecenas dictum turpis purus, id finibus purus imperdiet sed. Morbi at
-            augue vitae risus mattis lacinia.</div>
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center vertical-center"><h5>Atraso e Extravio de Bagagem</h5>
+            Mais do que ajudar na localização da bagagem extraviada, o seguro viagem NEXT cobre as suas despesas em relação e pertinência com o atraso ou extravio da bagagem.
+          </div>
         </div>
       </div>
       <div class="col-md-3 mx-2">
-        <div class="card vantagem">
-          <div class="card-body text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra
-            nisl eget tortor vestibulum semper. Maecenas dictum turpis purus, id finibus purus imperdiet sed. Morbi at
-            augue vitae risus mattis lacinia.</div>
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center vertical-center"><h5>Cancelamento e Atraso de Voos</h5>Você receberá o reembolso de despesas necessárias com alimentação, locomoção e hotel nos casos
+           documentados de atraso ou cancelamento de voo.
+          </div>
         </div>
       </div>
       <div class="col-md-3 mx-2">
-        <div class="card vantagem">
-          <div class="card-body text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra
-            nisl eget tortor vestibulum semper. Maecenas dictum turpis purus, id finibus purus imperdiet sed. Morbi at
-            augue vitae risus mattis lacinia.</div>
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center vertical-center"><h5>Acidentes pessoais</h5>Você receberá a indenização prevista em sua apólice, caso sofra algum acidente durante a viagem, que seja passível da cobertura especificada no plano escolhido.</div>
         </div>
       </div>
       <div class="col-md-3 mx-2">
-        <div class="card vantagem">
-          <div class="card-body text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra
-            nisl eget tortor vestibulum semper. Maecenas dictum turpis purus, id finibus purus imperdiet sed. Morbi at
-            augue vitae risus mattis lacinia.</div>
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center vertical-center"><h5>Reembolso com Despesas Médicas</h5>Você receberá o reembolso das despesas realizadas com consultas médicas e medicamentos usados para
+           o seu tratamento durante a viagem.
+          </div>
         </div>
       </div>
+      <div class="col-md-3 mx-2">
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center  vertical-center"><h5>Atendimento 24h em Português</h5>
+            Você tem a garantia de suporte e atendimento 24h, 7 dias por semana, no idioma que melhor convier.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-2">
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center  vertical-center"><h5>Seguro viagem Europa</h5>
+            Com os planos da NEXT, você assegura seu ingresso na Europa com planos completos e abrangentes que atendem a todas as exigências do Tratado de Schengen, além da garantia de suporte médico qualificado para dor ou doença em decorrência de enfermidade ou acidentes, até sua estabilização.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-2">
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center  vertical-center"><h5>Seguro viagem EUA</h5>
+            Contratando um plano NEXT para os EUA, você viaja com tranquilidade e proteção para todos os países da América do Norte, podendo, inclusive, cruzar fronteiras sem perder a cobertura. Você terá suporte médico de qualidade em qualquer situação de urgência e emergência, bastando acionar nossa central de emergência 24h pelo WhatsApp.
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-2">
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center  vertical-center"><h5>Seguro viagem Latam</h5>
+            Com uma apólice da NEXT, você viaja por toda a América do Sul com a garantia de suporte e atendimento médico de qualidade nas situações de urgência e emergência médica que possam ocorrer durante a sua viagem internacional.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-2">
+        <div class="card vantagem custom-card-height">
+          <div class="card-body text-center  vertical-center"><h5>Seguro viagem Internacional</h5>
+            Os planos NEXT atendem a todos os destinos mundiais, com raríssimas exceções. Todos os nossos planos oferecem apoio às situações de urgência e emergência médica, através de uma vasta rede credenciada em todo o mundo, com canais acessíveis, como o WhatsApp, sem burocracia e sem complicações.
+          </div>
+        </div>
+      </div>
+
     </div>
 
 
